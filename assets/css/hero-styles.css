@@ -1,0 +1,239 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #c9c9c9;
+}
+
+/* heroo section styles */
+.heroo {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: white;
+    background-image: 
+        repeating-linear-gradient(135deg, rgba(245, 245, 245, 0.3) 0 1px, transparent 1px 30px),
+        repeating-linear-gradient(225deg, rgba(245, 245, 245, 0.3) 0 1px, transparent 1px 30px);
+    background-size: 40px 40px;
+   
+    background-blend-mode: overlay;
+    overflow: hidden;
+}
+
+.heroo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.heroo-content {
+    flex: 1;
+    min-width: 50%;
+    order: 1;
+}
+
+.heroo-title {
+    font-size: 2.1rem;
+    font-weight: 580;
+    line-height: 1.2;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.heroo-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #5b5b5b;
+    margin-top: 50px;
+}
+
+.playstore-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.get-it-on {
+    font-size: 0.9rem;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.playstore-link {
+    display: inline-block;
+    transition: transform 0.7s ease;
+}
+
+.playstore-link:hover {
+    transform: scale(1.05);
+}
+
+.playstore-logo {
+    height: 60px;
+    width: auto;
+}
+
+.heroo-image {
+    flex: 1;
+    min-width: 50%;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.7s ease-in;
+    transform: scale(1.1);
+}
+
+.appp-preview {
+    max-width: 100%;
+    height: auto;
+    max-height: 900px;
+    border-radius: 20px;
+    margin-top:-40px;
+    
+}
+
+/* Subtle background for other main sections */
+.how-section, .who-section, .faq-section, .contact-section {
+    background-color: #fff;
+    background-image: repeating-linear-gradient(120deg, #f6f6f6 0 2px, transparent 2px 60px), repeating-linear-gradient(240deg, #f6f6f6 0 2px, transparent 2px 60px);
+    background-size: 120px 120px;
+    background-blend-mode: lighten;
+}
+
+/* Optional: add a class for any section you want a subtle pattern on */
+.section-pattern {
+    background-color: #fff;
+    background-image: repeating-linear-gradient(120deg, #f8f8f8 0 1.5px, transparent 1.5px 50px), repeating-linear-gradient(240deg, #f8f8f8 0 1.5px, transparent 1.5px 50px);
+    background-size: 100px 100px;
+    background-blend-mode: lighten;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .heroo-title {
+        font-size: 2rem;
+    }
+    
+    .heroo-subtitle {
+        font-size: 1rem;
+    }
+
+    .appp-preview {
+        margin-top: 0;
+        transform: scale(0.95);
+    }
+}
+
+@media (max-width: 768px) {
+    .heroo-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .heroo-content, .heroo-image {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .heroo-content {
+        order: 1;
+    }
+    
+    .heroo-image {
+        order: 2;
+        margin-top: 20px;
+    }
+    
+    .heroo-title {
+        font-size: 1.8rem;
+        margin-top: 20px;
+    }
+    
+    .heroo-subtitle {
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .playstore-logo {
+        height: 50px;
+        margin: 0 auto;
+    }
+    
+    .playstore-btn {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .appp-preview {
+        max-width: 80%;
+        border-radius: 15px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .heroo {
+        padding: 40px 15px;
+    }
+    
+    .heroo-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .heroo-content {
+        order: 1;
+    }
+    
+    .heroo-image {
+        order: 2;
+        margin-top: 30px;
+        transform: scale(1);
+    }
+    
+    .heroo-title {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    
+    .heroo-subtitle {
+        font-size: 0.95rem;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .appp-preview {
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .playstore-logo {
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroo-title {
+        font-size: 1.3rem;
+    }
+    
+    .heroo-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .appp-preview {
+        max-width: 100%;
+    }
+}

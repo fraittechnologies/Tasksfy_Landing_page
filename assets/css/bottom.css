@@ -1,0 +1,288 @@
+/* Reader section styles */
+.bottom-section {
+    width: 100%;
+    margin-top: -650px;
+    
+}
+
+.bottom-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    padding: 50px 50px;
+    background-color:  #05a243;
+    border-radius: 16px;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.bottom-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.bottom-section .info {
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 0 30px 0;
+    color: #ffffff;
+    line-height: 1.7;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+}
+
+.bottom-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+     margin-top: 40px; 
+      text-decoration: none;
+
+}
+
+.bottom-button:hover {
+    background-color: #FBAE00;
+    transform: translateY(-2px);
+    color:white;
+}
+
+/* Preview image styles */
+.view {
+    position: absolute;
+    z-index: 1;
+    max-width: 150px;
+    opacity: 1;
+    max-width: 400px;
+}
+
+.view-top {
+    top: -130px;
+    right: -100px;
+}
+
+.view-bottom {
+    bottom: -110px;
+    right: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .bottom-container {
+        padding: 40px 30px;
+        padding-bottom: 150px; /* Increased padding to accommodate bottom image */
+    }
+    
+    .bottom-section h1 {
+        font-size: 1.4rem;
+    }
+    
+    .view {
+        max-width: 250px; /* Reduced from 500px for better visibility */
+        opacity: 0.9; /* Slightly increase transparency */
+    }
+    
+    .view-top {
+        top: -50px;
+        right: -40px;
+        transform: rotate(5deg); /* Slight rotation for better visibility */
+    }
+    
+    .view-bottom {
+        bottom: -50px;
+        right: 10px;
+    }
+    
+    .bottom-button {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+    }
+    
+    .bottom-section .info {
+        font-size: 0.95rem;
+        max-width: 65%; /* Limit text width to make room for images */
+    }
+}
+
+@media (max-width: 600px) {
+    .bottom-container {
+        padding: 35px 25px;
+        max-width: 95%;
+        padding-bottom: 130px; /* More space for bottom image */
+    }
+    
+    .bottom-section h1 {
+        font-size: 1.6rem;
+    }
+    
+    .bottom-section .info {
+        font-size: 0.95rem;
+        max-width: 80%;
+    }
+    
+    .view {
+        max-width: 180px; /* Adjusted from 100px to be more visible */
+    }
+    
+    .view-top {
+        top: -30px;
+        right: -30px;
+    }
+    
+    .view-bottom {
+        bottom: -40px;
+        right: 5px;
+        max-width: 160px; /* Slightly smaller than view-top */
+    }
+}
+
+@media (max-width: 480px) {
+    .bottom-container {
+        padding: 30px 20px;
+        padding-bottom: 120px; /* Space for bottom image */
+    }
+    
+    .bottom-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .bottom-section .info {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+    
+    .view {
+        max-width: 140px; /* Increased from 80px for better visibility */
+    }
+    
+    .view-top {
+        top: -20px;
+        right: -20px;
+        transform: rotate(8deg); /* More rotation for better fit */
+    }
+    
+    .view-bottom {
+        bottom: -25px;
+        right: 0;
+        max-width: 130px;
+    }
+    
+    .bottom-button {
+        padding: 10px 24px;
+    }
+}
+
+
+
+
+
+
+/* WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 90px; /* sit above back-to-top (which is bottom:30px) */
+    right: 30px;  /* align with back-to-top on the right */
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 10000; /* above back-to-top */
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(254, 252, 252, 0.3);
+    color:#333;
+}
+
+.whatsapp-tooltip {
+    position: absolute;
+    right: 70px; /* show tooltip to the left of the button */
+    background: #333;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+    right: 75px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FBAE00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.back-to-top:hover {
+    background: #e69e00;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+}

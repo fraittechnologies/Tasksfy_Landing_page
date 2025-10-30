@@ -1,0 +1,83 @@
+/* 404 Page Styles */
+:root { --brand:#05A243; --accent:#FBAE00; --text:#1e293b; --muted:#6b7280; }
+
+html, body { height: 100%; }
+body.page-404 {
+  margin: 0;
+  color: var(--text);
+  background: #0b1220;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page-404 .container-404 {
+  width: 100%;
+  max-width: 900px;
+  padding: 28px;
+  text-align: center;
+  margin-top: 90px; /* account for fixed navbar */
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+}
+
+.page-404 .code-404 {
+  font-size: clamp(64px, 12vw, 140px);
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 0 6px 24px rgba(0,0,0,0.45);
+  margin: 0 0 8px 0;
+}
+
+.page-404 .headline-404 {
+  font-size: clamp(18px, 2.8vw, 28px);
+  color: #e5e7eb;
+  margin: 4px 0 18px 0;
+  font-weight: 600;
+}
+
+.page-404 .subtitle-404 {
+  color: #cbd5e1;
+  font-size: clamp(14px, 2vw, 16px);
+  margin: 0 0 26px 0;
+}
+
+.page-404 .scene-404 {
+  position: relative;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto 28px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+  background: radial-gradient(1200px 400px at 50% 120%, rgba(251,174,0,0.18), transparent 60%),
+              linear-gradient(180deg, #0b1220 0%, #0e1729 60%, #0b1220 100%);
+}
+
+.page-404 .scene-404 svg { display: block; width: 100%; height: auto; }
+
+.page-404 .actions-404 { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.page-404 .btn-404 {
+  appearance: none; border: 0; cursor: pointer; text-decoration: none;
+  padding: 12px 18px; border-radius: 10px; font-weight: 600;
+  transition: transform .15s ease, box-shadow .2s ease, background .2s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+.page-404 .btn-404.primary { background: var(--accent); color: #111827; }
+.page-404 .btn-404.primary:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,0,0,0.35); }
+.page-404 .btn-404.ghost { background: rgba(255,255,255,0.08); color: #e5e7eb; }
+.page-404 .btn-404.ghost:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,0,0,0.35); }
+
+.page-404 .brand-404 { margin-top: 22px; font-size: 12px; color: #94a3b8; }
+.page-404 .brand-404 strong { color: var(--accent); }
+
+@media (max-width: 520px) {
+  .page-404 .btn-404 { width: 100%; }
+}
+
+

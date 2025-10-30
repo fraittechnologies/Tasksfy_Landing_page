@@ -1,0 +1,137 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Accessibility Toggle Button */
+  #accessibility-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+  
+  /* Accessibility Panel */
+  #accessibility-panel {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 250px;
+  }
+  
+  #accessibility-panel.hidden {
+    display: none;
+  }
+  
+  .control-group {
+    margin-bottom: 15px;
+  }
+  
+  .control-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .control-group button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .control-group button.active {
+    background: #2ecc71;
+    color: white;
+    border-color: #2ecc71;
+  }
+  
+  /* Accessibility Modes */
+  body.font-small {
+    font-size: 14px;
+  }
+  
+  body.font-large {
+    font-size: 18px;
+  }
+  
+  body.font-serif {
+    font-family: Georgia, serif;
+  }
+  
+  body.font-monospace {
+    font-family: 'Courier New', monospace;
+  }
+  
+  body.theme-dark {
+    background: #121212;
+    color: #fff;
+  }
+  
+  body.theme-high-contrast {
+    background: #000;
+    color: #fff;
+  }
+  
+  body.theme-high-contrast a,
+  body.theme-high-contrast button {
+    color: #ff0;
+    border-color: #ff0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* Base font (Roboto) */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Default size */
+    transition: all 0.3s ease; /* Smooth transitions */
+  }
+  
+  /* Font Families */
+  body.font-sans-serif {
+    font-family: 'Roboto', sans-serif !important;
+  }
+  body.font-serif {
+    font-family: 'Merriweather', serif !important;
+  }
+  body.font-monospace {
+    font-family: 'Courier Prime', monospace !important;
+  }
+  
+  /* Font Sizes */
+  body.font-small {
+    font-size: 14px !important;
+  }
+  body.font-large {
+    font-size: 18px !important;
+  }
