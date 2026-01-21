@@ -5,28 +5,22 @@ Tasksy Website
 Developed by frank dev
 */
 
-:root{
-   --primary-color: #05a243;
-  --secondary-color:#fbae00;
-  --dark-color: #333;
-  --light-color: #f4f4f4;
-  --gray-color: #777;
-  --white-color: #fff;
-  --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      --primary-green:  #05a243;
-    --dark-green: #27ae60;
-    --light-green: #58e68a;
-    --progress-green: #1abc9c;
-    --text-dark: #2c3e50;
-    --text-light: #ecf0f1;
+/* ================= CSS VARIABLES ================= */
+:root {
+    --primary-color: #05a243;
+    --secondary-color: #fbae00;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --gray-color: #777;
+    --white-color: #fff;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --primary-dark: #038b38;
     --primary: #05A243;
     --secondary: #FBAE00;
     --white: #FFFFFF;
     --black: #000000;
     --light-gray: #F5F5F5;
     --dark-gray: #333333;
-    --primary-color: #05a243;
-    --primary-dark: #038b38;
     --text-color: #333;
     --text-light: #666;
     --bg-color: #ffffff;
@@ -34,11 +28,6 @@ Developed by frank dev
     --border-radius: 10px;
     --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     --transition: all 0.3s ease;
-    --primary-black: #121212;
-    --primary-white: #ffffff;
-    --primary-green: #2ecc71;
-    --primary-orange: #f39c12;
-
 }
 *{
     margin: 0;
@@ -50,10 +39,7 @@ Developed by frank dev
 
 
 
-/*---------------------------------------------
-preloader
---------------------------------------------- 
-*/
+/* ================= PRELOADER ================= */
 
 .js-preloader {
     position: fixed;
@@ -153,10 +139,7 @@ preloader
 /* end  preloader container*/
 
 
-/*   -------------New Section----How Tasksfy Works-------------
-==================================================================================*/
-
-/* How it works section*/
+/* ================= HOW TASKSFY WORKS SECTION ================= */
 
 .how-it-works {
   width: 100%;
@@ -544,10 +527,7 @@ preloader
     }
 }
 
-/*   -------------New Section----cookies------
-==================================================================================*/
-
-/* Cookie Consent Styles */
+/* ================= COOKIE CONSENT ================= */
 .cookie-consent {
   position: fixed;
   bottom: 0;
@@ -613,11 +593,7 @@ preloader
 
 
 
-/*   -------------New Section----Tasksfy Operations------
-==================================================================================*/
-
-
-/* ===== START OF NEW OPERATIONS SECTION STYLES ===== */
+/* ================= TASKSFY OPERATIONS SECTION ================= */
 .operations-section {
     padding: 80px 0;
     background-color:rgb(250, 250, 250);
@@ -726,10 +702,18 @@ preloader
 /* Mobile Preview Styles */
 .operations-mobile-preview {
     position: relative;
-    width: 100%;
-    max-width: 280px;
+    width: auto;
     min-height: 500px;
     margin: 0 auto;
+    z-index: 10;
+    overflow: visible;
+}
+
+@media (min-width: 992px) {
+    .operations-mobile-preview {
+        margin: 0 auto;
+    }
+}
 }
 
 .operations-mobile-mockup {
@@ -741,6 +725,7 @@ preloader
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 11;
 }
 
 .operations-mobile-screen {
@@ -754,12 +739,14 @@ preloader
 }
 
 .operations-mobile-screen img {
-    width: 180%;
+    width:200%;
     height: auto;
     max-height: 500px;
     object-fit: contain;
-    margin-left: -40%;
+        margin-left: -270px;
     transform: translateX(20%) translateY(20px);
+    position: relative;
+    z-index: 9999;
 }
 
 /* Content Sections */
@@ -896,8 +883,8 @@ preloader
         max-width: 250px;
     }
 }
-/* ===== END OF NEW OPERATIONS SECTION STYLES ===== */
-/* ===== DOWNLOAD APP SECTION - SIMPLIFIED ===== */
+/* ================= END TASKSFY OPERATIONS SECTION ================= */
+/* ================= DOWNLOAD APP SECTION ================= */
 .download-app-section {
     width: 100%;
     padding: 40px 15px;
@@ -911,14 +898,15 @@ preloader
     position: absolute;
     top: -100px;
     right: -100px;
-    width: 400px;
-    height: 400px;
-    background: rgba(5, 162, 67, 0.05);
-    border-radius: 50%;
-    z-index: 0;
-}
-
-.download-app-section::after {
+    width: auto;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
+    margin-left: 0;
+    transform: translateY(20px);
+    position: relative;
+    z-index: 9999;
+    overflow: visible;
     content: '';
     position: absolute;
     bottom: -150px;
@@ -1098,7 +1086,7 @@ preloader
     }
 }
 
-/* Desktop styles */
+/* ================= DESKTOP STYLES ================= */
 @media (min-width: 900px) {
     .download-app-section {
         padding: 60px 20px;
@@ -1128,14 +1116,14 @@ preloader
     }
 }
 
-/* Mobile styles - hide images */
+/* ================= MOBILE STYLES ================= */
 @media (max-width: 899px) {
     .download-app-view {
         display: none;
     }
 }
 
-/* Small mobile adjustment */
+/* ================= SMALL MOBILE ADJUSTMENT ================= */
 @media (max-width: 400px) {
     .download-app-view {
         width: 0px;
