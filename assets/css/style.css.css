@@ -1057,12 +1057,12 @@ Developed by frank dev
     color: #ffffff;
     line-height: 1.6;
     position: relative;
-    z-index: 2;
+    z-index: 2;w
 }
 
 .download-app-button {
-    background-color: #000;
-    color: #fff;
+    background-color: #FBAE00;
+    color: #000000;
     padding: 12px 28px;
     font-size: 1rem;
     border-radius: 8px;
@@ -1097,12 +1097,12 @@ Developed by frank dev
     }
     
     .download-app-top {
-        top: -125px;
+        top: -80px;
         right: -112px;
     }
     
     .download-app-bottom {
-        bottom: -108px;
+        bottom: -77px;
         right: 150px;
     }
     
@@ -1135,5 +1135,47 @@ Developed by frank dev
     
     .download-app-bottom {
         bottom: -30px;
+    }
+}
+
+/* ================= OPERATIONS MOBILE PREVIEW FIX ================= */
+@media (max-width: 600px) {
+    .operations-mobile-preview {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px !important; /* Extremely tight spacing */
+    }
+    .operations-content-sections {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    .operations-mobile-mockup {
+        width: 100%;
+        max-width: 700px;
+        box-sizing: border-box;
+        overflow: visible;
+        margin-bottom: 16px;
+    }
+    .operations-mobile-screen {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+    .operations-mobile-screen img {
+           width: 100%;
+           height: 900px;
+           max-height: 60vh;
+        object-fit: contain;
+        border-radius: 24px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        display: block;
+        padding: 0 8px;
     }
 }

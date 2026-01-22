@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/HTML-5-orange?logo=html5" alt="HTML">
   <img src="https://img.shields.io/badge/CSS-3-blue?logo=css3" alt="CSS">
   <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Made%20by-Frank%20Mwaniki-success" alt="Made by Frank Mwaniki">
+  <img src="https://img.shields.io/badge/Made%20by-Frank%20Mwaniki-success" alt="Made by fraittech.co.ke">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Project Status">
 </p>
 
@@ -48,7 +48,7 @@
 
 ## 👨‍💻 Developer Information
 
-**Developer:** Frank Mwaniki
+**Developer:** fraittech.co.ke
 📞 **Phone:** +254 742 451 220
 📧 **Email:** [f33mwaniki@gmail.com](mailto:f33mwaniki@gmail.com)
 
@@ -57,7 +57,7 @@
 ## 📝 License
 
 This project is **open-source**.
-You may use, modify, and distribute it for personal or commercial purposes — just credit **Frank Mwaniki** as the original developer.
+You may use, modify, and distribute it for personal or commercial purposes — just credit **fraittech.co.ke** as the original developer.
 
 ---
 
@@ -83,7 +83,7 @@ Here’s a screenshot of the landing page:
 ---
 
 <p align="center">
-  © 2025 <b>Frank Mwaniki</b> — All Rights Reserved  
+  © 2025 <b>fraittech.co.ke</b> — All Rights Reserved  
   <br><br>
   <img src="https://img.shields.io/badge/Made%20With❤️-By%20Frank%20Mwaniki-red" alt="Made with love">
 </p>
