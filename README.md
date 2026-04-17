@@ -83,7 +83,7 @@ Here’s a screenshot of the landing page:
 ---
 
 <p align="center">
-  © 2025 <b>fraittech.co.ke</b> — All Rights Reserved  
+  © 2026 <b>fraittech.co.ke</b> — All Rights Reserved  
   <br><br>
   <img src="https://img.shields.io/badge/Made%20With❤️-By%20Frank%20Mwaniki-red" alt="Made with love">
 </p>
